@@ -1,0 +1,3994 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI B2B Wholesale & Quote Requests for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-b2b-wholesale-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T03:15:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-b2b-wholesale-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-b2b-wholesale-for-woocommerce.php
+msgid "DEV3 AI B2B Wholesale & Quote Requests for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-b2b-wholesale-for-woocommerce.php
+msgid "https://dev3.tech/item/dev3-ai-b2b-wholesale-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-b2b-wholesale-for-woocommerce.php
+msgid "Wholesale roles, tiered B2B pricing, quick order and request-a-quote for WooCommerce, with DEV3 AI quote drafts from free-text requests."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-b2b-wholesale-for-woocommerce.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-b2b-wholesale-for-woocommerce.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:42
+msgid "DEV3 B2B & Quotes"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:71
+#: build/admin.js:3
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Assistant.php:48
+#: includes/Ai/Assistant.php:217
+#: includes/Frontend/Account.php:92
+#: includes/Frontend/Storefront.php:428
+#: includes/Quotes/Service.php:90
+#: includes/Quotes/Service.php:136
+#: includes/Quotes/Service.php:335
+#: includes/Quotes/Service.php:393
+#: includes/Rest/Admin_Controller.php:111
+#: includes/Rest/Public_Controller.php:488
+msgid "Quote not found."
+msgstr ""
+
+#: includes/Ai/Assistant.php:52
+msgid "There is no request text to work from."
+msgstr ""
+
+#: includes/Ai/Assistant.php:52
+msgid "Paste the customer's email or describe the items in the box first."
+msgstr ""
+
+#: includes/Ai/Assistant.php:56
+msgid "No catalogue products match this request."
+msgstr ""
+
+#: includes/Ai/Assistant.php:56
+msgid "Check the product names in the request, or add the lines by hand."
+msgstr ""
+
+#. translators: %d: number of suggestions
+#: includes/Ai/Assistant.php:121
+#, php-format
+msgid "%d suggestion"
+msgid_plural "%d suggestions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Ai/Assistant.php:122
+msgid "Removed because the product is not in your catalogue."
+msgstr ""
+
+#: includes/Ai/Assistant.php:176
+msgid "Unknown email type."
+msgstr ""
+
+#: includes/Ai/Assistant.php:199
+msgid "DEV3 AI returned an empty email. Try again."
+msgstr ""
+
+#: includes/Ai/Assistant.php:255
+#: includes/Ai/Assistant.php:278
+#: includes/Wholesale/Applications.php:289
+#: includes/Wholesale/Applications.php:353
+msgid "Application not found."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: includes/Data/Personal_Data.php:68
+#: includes/Frontend/Account.php:113
+#: includes/Frontend/Account.php:118
+#: includes/Quotes/Pdf_Quote.php:141
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+#: includes/Frontend/Storefront.php:440
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Personal_Data.php:23
+#: includes/Data/Personal_Data.php:24
+msgid "B2B quotes and wholesale applications"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:44
+#: includes/Frontend/Account.php:64
+#: includes/Frontend/Account.php:68
+#: includes/Frontend/Account.php:79
+#: build/admin.js:3
+msgid "Quotes"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:48
+#: includes/Frontend/Account.php:113
+#: includes/Frontend/Account.php:117
+#: build/admin.js:3
+msgid "Quote"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:52
+#: includes/Emails/Email_App_Base.php:64
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Name"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:56
+#: includes/Emails/Email_App_Base.php:63
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Company"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:60
+#: includes/Emails/Email_App_Base.php:69
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Phone"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:64
+#: includes/Emails/Email_Quote_Base.php:123
+msgid "Request"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:86
+msgid "Wholesale applications"
+msgstr ""
+
+#. translators: %s: email title
+#: includes/Emails/Emails.php:84
+#, php-format
+msgid "Email sent: %s"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:22
+#: includes/Emails/Email_Admin_Application.php:43
+msgid "New wholesale application"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:23
+msgid "Sent to the store when someone applies for a wholesale account."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:34
+msgid "[{site_title}] New wholesale application from {company}"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:52
+msgid "A business applied for a wholesale account. Review it and approve or decline it in the B2B desk."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:63
+msgid "Review application"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Application.php:75
+#: includes/Emails/Email_Admin_Quote.php:123
+msgid "Recipient(s)"
+msgstr ""
+
+#. translators: %s: admin email
+#: includes/Emails/Email_Admin_Application.php:78
+#: includes/Emails/Email_Admin_Quote.php:126
+#, php-format
+msgid "Comma-separated. Defaults to %s."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:22
+msgid "Quote activity (store)"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:23
+msgid "Sent to the store for new quote requests, accepted or declined quotes and customer messages."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:35
+msgid "[{site_title}] New quote request {quote_number} from {customer}"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:36
+msgid "[{site_title}] Quote {quote_number} accepted"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:37
+msgid "[{site_title}] Quote {quote_number} declined"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:38
+msgid "[{site_title}] New message on quote {quote_number}"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:60
+msgid "New quote request"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:61
+msgid "Quote accepted"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:62
+msgid "Quote declined"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:63
+msgid "New customer message"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:73
+msgid "Quote activity"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:93
+msgid "The customer accepted this quote. A pending order with the quoted prices was created and the customer can pay it online."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:95
+msgid "The customer declined this quote."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:97
+msgid "The customer sent a message about this quote:"
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:99
+msgid "A customer asked for a quote. Open it to price the lines (DEV3 AI can draft it from the request text) and send it."
+msgstr ""
+
+#: includes/Emails/Email_Admin_Quote.php:111
+msgid "Open the quote"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:65
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Email"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:66
+#: build/storefront.js:1
+msgid "Account type"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:70
+#: build/admin.js:3
+msgid "Tax ID"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:71
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Website"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:72
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Country"
+msgstr ""
+
+#: includes/Emails/Email_App_Base.php:73
+#: includes/Quotes/Pdf_Quote.php:306
+#: build/admin.js:3
+msgid "Message"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:23
+msgid "Wholesale application update (applicant)"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:24
+msgid "Sent to the applicant when the application is received, approved or declined."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:35
+msgid "We received your wholesale application"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:36
+msgid "Your wholesale account at {site_title} is active"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:37
+msgid "Your wholesale application at {site_title}"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:59
+msgid "Thanks for applying"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:60
+msgid "Welcome to wholesale"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:61
+msgid "About your application"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:71
+msgid "Your wholesale application"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:82
+msgid "Good news: your wholesale account is approved. Log in to see your prices, use the quick order form and request quotes."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:84
+msgid "Thank you for your interest. We are unable to approve a wholesale account for you at this time."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:86
+msgid "We received your wholesale application and will review it shortly. You will get another email when it is approved."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Application.php:104
+msgid "Go to your account"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:23
+msgid "Quote message (customer)"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:24
+msgid "Sent when the store replies on a quote."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:34
+msgid "New message about your quote {quote_number}"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:43
+msgid "A message about your quote"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:61
+msgid "We sent you a message about your quote:"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Message.php:72
+msgid "View and reply"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:25
+msgid "Quote ready (customer)"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:26
+msgid "Sends the priced quote with the PDF and an Accept link."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:36
+msgid "Your quote {quote_number} from {site_title}"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:45
+msgid "Your quote is ready"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:74
+msgid "Here is your quote. Review the lines below (the PDF is attached), then accept it online to turn it into an order you can pay right away."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:85
+#: includes/Emails/Email_Customer_Quote_Reminder.php:88
+msgid "Review and accept"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:95
+msgid "Attach PDF"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Ready.php:97
+msgid "Attach the quote as a PDF"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:23
+msgid "Quote request received (customer)"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:24
+msgid "Confirms a quote request to the customer."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:34
+msgid "We received your quote request {quote_number}"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:43
+msgid "Thanks for your request"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:61
+msgid "We received your quote request and will send you a priced quote soon. Here is what you asked for:"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Received.php:72
+#: build/storefront.js:1
+msgid "View your request"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:23
+msgid "Quote reminder / expired (customer)"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:24
+msgid "Follow-up a few days after a quote was sent (see the B2B settings), and a note when a quote expires."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:34
+msgid "Your quote {quote_number} has expired"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:34
+msgid "A reminder about your quote {quote_number}"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:54
+#: includes/Emails/Email_Customer_Quote_Reminder.php:65
+msgid "Your quote is waiting"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:55
+msgid "Your quote has expired"
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:75
+msgid "The quote below has passed its validity date. Reply to this email or request a new quote and we will gladly update it for you."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:77
+msgid "Just checking in: your quote is still available. Accept it online whenever you are ready, or send us a message if anything needs changing."
+msgstr ""
+
+#: includes/Emails/Email_Customer_Quote_Reminder.php:88
+msgid "View the quote"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:104
+#: includes/Quotes/Pdf_Quote.php:268
+#: includes/Rest/Public_Controller.php:516
+#: build/admin.js:3
+msgid "Subtotal"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:106
+#: includes/Quotes/Pdf_Quote.php:270
+#: includes/Rest/Public_Controller.php:518
+#: build/admin.js:3
+msgid "Discount"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:109
+#: includes/Quotes/Pdf_Quote.php:273
+#: includes/Rest/Public_Controller.php:521
+#: build/admin.js:3
+msgid "Shipping"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:112
+#: includes/Quotes/Pdf_Quote.php:278
+#: includes/Rest/Public_Controller.php:526
+#: build/admin.js:3
+msgid "Estimated tax"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:114
+#: includes/Frontend/Account.php:113
+#: includes/Frontend/Account.php:120
+#: includes/Quotes/Pdf_Quote.php:224
+#: includes/Quotes/Pdf_Quote.php:280
+#: includes/Rest/Public_Controller.php:528
+#: templates/emails/dev3bq-email.php:37
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Total"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:118
+#: includes/Quotes/Pdf_Quote.php:142
+#: build/admin.js:3
+msgid "Valid until"
+msgstr ""
+
+#: includes/Emails/Email_Quote_Base.php:121
+#: build/admin.js:3
+msgid "Customer"
+msgstr ""
+
+#: includes/Frontend/Account.php:110
+#: build/admin.js:3
+msgid "No quotes yet"
+msgstr ""
+
+#: includes/Frontend/Account.php:110
+msgid "Add products to a quote from any product page, or describe what you need and we will price it for you."
+msgstr ""
+
+#: includes/Frontend/Account.php:110
+#: includes/Frontend/Storefront.php:311
+#: includes/Frontend/Storefront.php:361
+#: includes/Rest/Admin_Controller.php:936
+#: build/blocks.js:1
+msgid "Request a quote"
+msgstr ""
+
+#: includes/Frontend/Account.php:113
+#: includes/Frontend/Account.php:119
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Status"
+msgstr ""
+
+#: includes/Frontend/Account.php:113
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Actions"
+msgstr ""
+
+#: includes/Frontend/Account.php:121
+#: build/admin.js:3
+msgid "View"
+msgstr ""
+
+#. translators: %s: role name
+#: includes/Frontend/Account.php:134
+#, php-format
+msgid "Your account has %s pricing."
+msgstr ""
+
+#. translators: %s: role name
+#: includes/Frontend/Account.php:134
+msgid "Open the quick order form"
+msgstr ""
+
+#: includes/Frontend/Account.php:138
+msgid "Buying for a business?"
+msgstr ""
+
+#: includes/Frontend/Account.php:138
+#: build/storefront.js:1
+msgid "Apply for a wholesale account"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:139
+#: build/storefront.js:1
+msgid "Loading…"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:140
+msgid "Please enable JavaScript to use this form."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:213
+msgid "You have a wholesale account"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:213
+msgid "Your wholesale prices are active whenever you are logged in."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:213
+msgid "Start an order"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:216
+#: includes/Wholesale/Applications.php:41
+#: includes/Wholesale/Applications.php:81
+msgid "Wholesale registration is closed at the moment."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:309
+#: includes/Woo/Storefront_Pricing.php:388
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Quantity"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:311
+#: build/storefront.js:1
+msgid "Add to quote"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:377
+msgid "Request a quote for this cart"
+msgstr ""
+
+#: includes/Plugin.php:177
+msgid "DEV3 AI B2B Wholesale & Quote Requests needs WooCommerce to be active."
+msgstr ""
+
+#: includes/Pricing/Engine.php:192
+#: includes/Woo/Storefront_Pricing.php:151
+#: build/admin.js:3
+msgid "Wholesale price"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:94
+msgid "Wholesale"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:126
+msgid "Who can buy"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:129
+#: build/admin.js:2
+#: build/admin.js:3
+msgid "Everyone"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:130
+#: build/admin.js:3
+msgid "Wholesale customers only"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:131
+msgid "Retail customers only"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:134
+msgid "Hidden products disappear from the shop, search and related products for everyone else."
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:140
+msgid "Wholesale minimum quantity"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:152
+msgid "Wholesale pack size (step)"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:160
+msgid "Wholesale buyers order in multiples of this number (e.g. 6 per carton)."
+msgstr ""
+
+#. translators: %s: currency symbol
+#: includes/Pricing/Product_Meta.php:172
+#, php-format
+msgid "Fixed price (%s)"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:175
+msgid "Use pricing rules"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:177
+msgid "Leave empty to use the pricing rules and the role discount."
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:184
+#: build/admin.js:3
+msgid "Quantity breaks"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:188
+msgid "Comma-separated \"minimum quantity:unit price\" pairs. Used with the fixed price above."
+msgstr ""
+
+#. translators: 1: role name, 2: currency symbol
+#: includes/Pricing/Product_Meta.php:269
+#, php-format
+msgid "%1$s price (%2$s)"
+msgstr ""
+
+#: includes/Pricing/Product_Meta.php:272
+msgid "Parent / rules"
+msgstr ""
+
+#: includes/Pricing/Rules.php:149
+msgid "Pick who the rule is for."
+msgstr ""
+
+#: includes/Pricing/Rules.php:156
+msgid "A percentage discount cannot be more than 100."
+msgstr ""
+
+#: includes/Pricing/Rules.php:159
+msgid "Choose at least one product or category."
+msgstr ""
+
+#: includes/Pricing/Rules.php:163
+msgid "Untitled rule"
+msgstr ""
+
+#: includes/Quotes/Basket.php:81
+msgid "This product cannot be added to a quote."
+msgstr ""
+
+#. translators: %s: quote number
+#: includes/Quotes/Pdf_Quote.php:115
+#: build/admin.js:3
+#: build/storefront.js:1
+#, php-format,js-format
+msgid "Quote %s"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:131
+msgid "QUOTE"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:140
+msgid "Quote number"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:177
+msgid "PREPARED FOR"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:200
+#: build/storefront.js:1
+msgid "Item"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:204
+#: templates/emails/dev3bq-email.php:34
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Qty"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:214
+#: includes/Woo/Storefront_Pricing.php:388
+#: templates/emails/dev3bq-email.php:36
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Unit price"
+msgstr ""
+
+#. translators: %s: SKU
+#: includes/Quotes/Pdf_Quote.php:241
+#, php-format
+msgid "SKU %s"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:276
+#: includes/Rest/Public_Controller.php:524
+#: build/admin.js:3
+msgid "Tax"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:276
+#: includes/Rest/Public_Controller.php:524
+#: build/admin.js:3
+msgid "Exempt"
+msgstr ""
+
+#: includes/Quotes/Pdf_Quote.php:307
+#: build/admin.js:3
+msgid "Terms"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: includes/Quotes/Pdf_Quote.php:346
+#: build/storefront.js:1
+#, php-format,js-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:34
+#: build/admin.js:1
+msgid "New request"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:35
+#: build/admin.js:1
+msgid "In progress"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:36
+#: build/admin.js:1
+msgid "Sent"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:37
+#: build/admin.js:1
+msgid "Accepted"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:38
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Declined"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:39
+#: build/admin.js:1
+msgid "Expired"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:40
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: includes/Quotes/Quotes.php:61
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/Quotes/Quotes.php:87
+msgid "The quote could not be saved."
+msgstr ""
+
+#: includes/Quotes/Service.php:67
+msgid "Add at least one product or describe what you need."
+msgstr ""
+
+#: includes/Quotes/Service.php:74
+msgid "Quote requested."
+msgstr ""
+
+#: includes/Quotes/Service.php:93
+msgid "This quote can no longer be sent."
+msgstr ""
+
+#: includes/Quotes/Service.php:96
+msgid "Add at least one line before sending the quote."
+msgstr ""
+
+#: includes/Quotes/Service.php:112
+#: build/admin.js:3
+msgid "Quote sent to the customer."
+msgstr ""
+
+#: includes/Quotes/Service.php:140
+msgid "This quote cannot be accepted any more."
+msgstr ""
+
+#: includes/Quotes/Service.php:145
+msgid "This quote has expired. Please ask us for a new one."
+msgstr ""
+
+#: includes/Quotes/Service.php:148
+msgid "This quote has no lines yet."
+msgstr ""
+
+#: includes/Quotes/Service.php:152
+msgid "This quote was already accepted."
+msgstr ""
+
+#. translators: %s: order number
+#: includes/Quotes/Service.php:161
+#, php-format
+msgid "Quote accepted. Order #%s created."
+msgstr ""
+
+#: includes/Quotes/Service.php:212
+#: build/admin.js:3
+msgid "Note"
+msgstr ""
+
+#: includes/Quotes/Service.php:225
+msgid "Shipping (as quoted)"
+msgstr ""
+
+#. translators: %s: quote number
+#: includes/Quotes/Service.php:233
+#, php-format
+msgid "Discount (quote %s)"
+msgstr ""
+
+#. translators: %s: quote number
+#: includes/Quotes/Service.php:250
+#, php-format
+msgid "Created from accepted quote %s."
+msgstr ""
+
+#: includes/Quotes/Service.php:303
+msgid "This quote cannot be declined any more."
+msgstr ""
+
+#. translators: %s: reason
+#: includes/Quotes/Service.php:306
+#, php-format
+msgid "Quote declined: %s"
+msgstr ""
+
+#. translators: %s: reason
+#: includes/Quotes/Service.php:306
+msgid "Quote declined."
+msgstr ""
+
+#: includes/Quotes/Service.php:331
+msgid "Write a message first."
+msgstr ""
+
+#: includes/Quotes/Service.php:365
+msgid "Quote expired."
+msgstr ""
+
+#: includes/Quotes/Service.php:375
+msgid "Reminder sent."
+msgstr ""
+
+#. translators: %s: quote number
+#: includes/Quotes/Service.php:420
+#, php-format
+msgid "Copied from %s."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:214
+msgid "Retail"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:296
+msgid "A role with this key already exists."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:314
+msgid "Role not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:355
+msgid "Rule not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:386
+msgid "Pick a simple product or a variation."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:626
+msgid "Customer not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:629
+msgid "You cannot change this account."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:692
+msgid "Quote created by the store."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:719
+msgid "Accepted or cancelled quotes cannot be edited. Duplicate it instead."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:761
+msgid "DEV3 AI draft accepted."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:819
+msgid "The quote cannot move to that status."
+msgstr ""
+
+#. translators: %s: status
+#: includes/Rest/Admin_Controller.php:824
+#, php-format
+msgid "Status changed to %s."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:937
+#: build/admin.js:1
+msgid "Quick order"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:938
+#: build/admin.js:3
+#: build/blocks.js:1
+msgid "Wholesale registration"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:942
+msgid "That page cannot be created."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:271
+msgid "The cart is not available right now."
+msgstr ""
+
+#. translators: %s: product
+#: includes/Rest/Public_Controller.php:278
+#, php-format
+msgid "%s cannot be bought online."
+msgstr ""
+
+#. translators: %s: product
+#: includes/Rest/Public_Controller.php:278
+msgid "A product was not found."
+msgstr ""
+
+#. translators: %s: product
+#: includes/Rest/Public_Controller.php:290
+#, php-format
+msgid "%s could not be added."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:378
+msgid "Thanks! We will be in touch."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:386
+#: includes/Wholesale/Applications.php:61
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:390
+msgid "Enter your name."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:396
+#: includes/Wholesale/Applications.php:86
+msgid "Please check the highlighted fields."
+msgstr ""
+
+#. translators: %s: quote number
+#: includes/Rest/Public_Controller.php:426
+#, php-format
+msgid "Thanks! Your request %s is in. We will email you a priced quote soon."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:471
+msgid "Thanks! We received your application."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:582
+msgid "Thank you! Your order is ready. You can pay for it now."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:591
+msgid "The quote was declined. Thanks for letting us know."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:591
+msgid "Message sent. We will reply by email."
+msgstr ""
+
+#: includes/Settings.php:88
+#: build/admin.js:3
+msgid "Log in to see prices"
+msgstr ""
+
+#: includes/Settings.php:91
+msgid "Prices are valid until the date shown. Shipping and taxes as listed. Accepting this quote creates an order that you can pay online."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:64
+msgid "Enter your company name."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:67
+msgid "Enter your first name."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:94
+msgid "Your account already has wholesale access."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:100
+msgid "We already have your application and will reply by email soon."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:105
+msgid "An account with this email exists. Please log in first, then apply."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:136
+msgid "Welcome aboard! Your wholesale account is active. Check your email for your login details."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:150
+msgid "Thanks! We received your application and will email you once it is reviewed."
+msgstr ""
+
+#: includes/Wholesale/Applications.php:296
+msgid "Pick a wholesale role."
+msgstr ""
+
+#: includes/Wholesale/Roles.php:145
+msgid "Give the role a name."
+msgstr ""
+
+#: includes/Wholesale/Roles.php:381
+#: build/admin.js:3
+msgid "Wholesale role"
+msgstr ""
+
+#. translators: 1: role name, 2: minimum amount, 3: missing amount
+#: includes/Woo/Checkout_Rules.php:56
+#, php-format
+msgid "%1$s orders need at least %2$s. Add %3$s more to check out."
+msgstr ""
+
+#. translators: 1: role name, 2: minimum items, 3: missing items
+#: includes/Woo/Checkout_Rules.php:66
+#, php-format
+msgid "%1$s orders need at least %2$d items. Add %3$d more to check out."
+msgstr ""
+
+#. translators: 1: product name, 2: minimum quantity
+#: includes/Woo/Checkout_Rules.php:81
+#, php-format
+msgid "%1$s: the minimum for wholesale orders is %2$d."
+msgstr ""
+
+#. translators: 1: product name, 2: pack size
+#: includes/Woo/Checkout_Rules.php:84
+#, php-format
+msgid "%1$s: please order in multiples of %2$d."
+msgstr ""
+
+#: includes/Woo/Checkout_Rules.php:185
+msgid "Free wholesale shipping"
+msgstr ""
+
+#: includes/Woo/Order_Admin.php:33
+msgid "B2B"
+msgstr ""
+
+#. translators: %s: role name
+#: includes/Woo/Order_Admin.php:50
+#, php-format
+msgid "Wholesale role: %s"
+msgstr ""
+
+#: includes/Woo/Order_Admin.php:53
+#: build/admin.js:3
+msgid "Tax exempt"
+msgstr ""
+
+#: includes/Woo/Order_Admin.php:56
+msgid "Created from quote"
+msgstr ""
+
+#: includes/Woo/Order_Admin.php:59
+msgid "Retail order."
+msgstr ""
+
+#: includes/Woo/Storefront_Pricing.php:388
+msgid "Buy more, save more"
+msgstr ""
+
+#: includes/Woo/Storefront_Pricing.php:388
+msgid "You save"
+msgstr ""
+
+#: templates/emails/dev3bq-email.php:33
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Product"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3BQ_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3BQ_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:3
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From cart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quote list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Free-text request"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Created by store"
+msgstr ""
+
+#: build/admin.js:1
+#, js-format
+msgid "%s%% off"
+msgstr ""
+
+#: build/admin.js:1
+#, js-format
+msgid "%s off"
+msgstr ""
+
+#. translators: %s: unit price
+#. translators: %s: price
+#: build/admin.js:1
+#: build/admin.js:3
+#: build/storefront.js:1
+#, js-format
+msgid "%s each"
+msgstr ""
+
+#: build/admin.js:2
+#: build/admin.js:3
+msgid "All wholesale roles"
+msgstr ""
+
+#: build/admin.js:2
+msgid "just now"
+msgstr ""
+
+#: build/admin.js:2
+#, js-format
+msgid "%d min ago"
+msgstr ""
+
+#: build/admin.js:2
+#, js-format
+msgid "%d h ago"
+msgstr ""
+
+#: build/admin.js:2
+#, js-format
+msgid "%d d ago"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Search by name or SKU…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No products found."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Variable product"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Updated"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quotes waiting for you, wholesale applications and how B2B sales are doing."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Open quotes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:3
+msgid "With a Google Gemini key, DEV3 AI turns free-text requests into priced draft quotes, writes follow-up emails and pre-screens applications. Pricing, quotes and the storefront work without it."
+msgstr ""
+
+#: build/admin.js:3
+msgid "New quote requests"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Waiting for a price"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Open quote value"
+msgstr ""
+
+#. translators: %d: quotes
+#: build/admin.js:3
+#, js-format
+msgid "%d open quotes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Acceptance rate"
+msgstr ""
+
+#. translators: %s: amount
+#: build/admin.js:3
+#, js-format
+msgid "%s won in 30 days"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pending applications"
+msgstr ""
+
+#. translators: %d: customers
+#: build/admin.js:3
+#, js-format
+msgid "%d wholesale customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Wholesale revenue"
+msgstr ""
+
+#. translators: %d: orders
+#: build/admin.js:3
+#, js-format
+msgid "%d orders in 30 days"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Latest quotes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All quotes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Requests from the quote page, the cart and the quick-order form show up here."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Setup checklist"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Everything a B2B store needs, in order."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Wholesale roles"
+msgstr ""
+
+#. translators: %d: roles
+#: build/admin.js:3
+#, js-format
+msgid "%d roles with discounts, minimums, tax and payment rules."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add roles"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pricing rules"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Tier prices and quantity breaks by category or product."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Create a rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote request page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "A page with the [dev3bq_request_quote] shortcode or the Request a quote block."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Choose page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quick order page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "A page with [dev3bq_quick_order] for fast bulk buying."
+msgstr ""
+
+#: build/admin.js:3
+msgid "A page with [dev3bq_wholesale_registration] so businesses can apply."
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Drafts quotes from request text and writes the emails."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Connect"
+msgstr ""
+
+#: build/admin.js:3
+msgid "applications are waiting for review."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Review now"
+msgstr ""
+
+#: build/admin.js:3
+msgid "New quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pick an existing customer or type the contact details. Paste the customer’s request so DEV3 AI can draft the lines."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote created."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Create quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Change"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Find a customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Name or email"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Matching customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Or a new contact:"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Customer request (optional)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "e.g. \"Please quote 200 kraft mugs and 50 A5 notebooks, delivered to Berlin.\""
+msgstr ""
+
+#: build/admin.js:3
+msgid "Order"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Requests from the storefront and quotes you build. Open one to price it, let DEV3 AI draft it, send it as a PDF and turn it into an order."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote status"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Search quotes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Number, email, name or company"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No quotes match your search"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No quotes here yet"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Shoppers request quotes from product pages, the cart and the quote page. You can also create one yourself."
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI draft quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Sure match"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Likely match"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Check this"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Lines total (prices from your rules)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI could not match any catalogue products to this request."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Not matched"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Questions to ask the customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Suggested note to the customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Replace lines"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Accept lines"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add to current lines"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote saved."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Convert to order"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Mark declined"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Reopen as draft"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Cancel quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Retail prices"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Cover email for the quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Follow-up reminder"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Reply to the customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Cannot supply / alternatives"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote expired"
+msgstr ""
+
+#: build/admin.js:3
+msgid "PDF"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Copy created as a new draft."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Duplicate"
+msgstr ""
+
+#: build/admin.js:3
+msgid "This quote is accepted"
+msgstr ""
+
+#: build/admin.js:3
+msgid "This quote is closed"
+msgstr ""
+
+#. translators: 1: order number, 2: status
+#: build/admin.js:3
+#, js-format
+msgid "It became order #%1$s (%2$s). Duplicate it to make changes."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Duplicate it to make a new version."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Customer request"
+msgstr ""
+
+#: build/admin.js:3
+msgid "What the customer asked for, in their words. DEV3 AI matches it to real products and prices it with your rules."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Request text"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Paste the customer’s email or list here…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Matching products…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Draft with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Prices always come from your pricing rules, never from AI."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Connect DEV3 AI to draft lines from this text automatically."
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI lines added to the quote."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Lines"
+msgstr ""
+
+#: build/admin.js:3
+msgid "New lines are priced by your rules for this customer’s role and quantity. Type a price to override it."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Prices updated from the rules."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Re-price from rules"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No lines yet. Search for a product below or let DEV3 AI draft them."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote lines"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Item name"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Custom item"
+msgstr ""
+
+#. translators: %s: list price
+#: build/admin.js:3
+#, js-format
+msgid "List %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Line note"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Note (optional)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule price"
+msgstr ""
+
+#: build/admin.js:3
+msgid "On save"
+msgstr ""
+
+#. translators: %s: item
+#. translators: %s: product
+#: build/admin.js:3
+#: build/storefront.js:1
+#, js-format
+msgid "Remove %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "line"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add a product"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Custom line"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Totals, validity and terms"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Extra discount"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Store tax rules"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Leave empty to use the default terms from Settings."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Tax (exempt)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Totals update fully (rule prices and tax) when you save."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Message to the customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Printed on the PDF and sent with the quote email."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Send again"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Send quote"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Hi Anna, thanks for your request. Here is our offer…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Email to write"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Points to mention (optional)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "e.g. delivery in 5 days, free samples"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Writing…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Write with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI · email draft"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Subject"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Body"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Use this text"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Draft placed in the message to the customer. Press “Send quote” when ready."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Draft placed in the reply box. Press “Send reply” when ready."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Registered customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Guest. The customer uses the private link in the email."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Price list"
+msgstr ""
+
+#: build/admin.js:3
+msgid "New and re-priced lines use this role’s prices."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Open customer view"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Payment link for the customer"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Timeline"
+msgstr ""
+
+#: build/admin.js:3
+msgid "System"
+msgstr ""
+
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Store"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Reply sent."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Send reply"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Internal note"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Only your team sees this"
+msgstr ""
+
+#. translators: 1: created date, 2: valid until
+#: build/admin.js:3
+#, js-format
+msgid "Created %1$s · valid until %2$s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Unsaved changes"
+msgstr ""
+
+#. translators: %d: lines
+#: build/admin.js:3
+#, js-format
+msgid "Unsaved changes · %d line"
+msgid_plural "Unsaved changes · %d lines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:3
+msgid "Discard"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Creates a pending WooCommerce order with exactly these prices and marks the quote as accepted."
+msgstr ""
+
+#: build/admin.js:3
+msgid "The customer will no longer be able to accept this quote."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Keep it"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Order created from the quote."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote updated."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Use the role setting"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Not exempt"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Contact"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Requested"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Applied"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:3
+#, js-format
+msgid "Wholesale application · %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Application declined. The applicant was emailed."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Decline"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approved. The customer now has wholesale prices."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approve"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approved"
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI screening"
+msgstr ""
+
+#: build/admin.js:3
+msgid "A second pair of eyes on the details. You decide."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Looks fine"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Check"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Questions to ask"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Not screened yet."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Connect DEV3 AI in API Config to screen applications."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Screening…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Screen again"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Screen with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Decision"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approve as"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Note to the applicant (in the email)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Write welcome note"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Write decline note"
+msgstr ""
+
+#: build/admin.js:3
+msgid "DEV3 AI · note draft"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Use this note"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Edit user"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Customer saved."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Wholesale access removed."
+msgstr ""
+
+#: build/admin.js:3
+msgid "None (retail customer)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Currently tax exempt."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Currently pays tax."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Screened"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Standard"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Since"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Wholesale customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Review applications from the registration form and manage who gets which price list."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pending"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Customers"
+msgstr ""
+
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Search"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Company or email"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No wholesale customers yet"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approve an application or give a user a wholesale role here or in Users."
+msgstr ""
+
+#: build/admin.js:3
+msgid "No applications waiting"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Nothing here"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add the [dev3bq_wholesale_registration] shortcode or the Wholesale registration block to a page so businesses can apply."
+msgstr ""
+
+#: build/admin.js:3
+msgid "New wholesale role"
+msgstr ""
+
+#. translators: %s: role
+#: build/admin.js:3
+#, js-format
+msgid "Edit %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "A role is a price list plus buying rules. Customers get it when you approve their application."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Role saved."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Save role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "e.g. Gold distributor"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Default discount"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Used when no rule or product price matches."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Minimum order value"
+msgstr ""
+
+#: build/admin.js:3
+msgid "0 = no minimum."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Minimum items per order"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Free shipping from"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Adds a free shipping option above this cart value. 0 = off."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Price label"
+msgstr ""
+
+#: build/admin.js:3
+msgid "“Add to quote” button"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Follow the store setting"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Always show"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Never show"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No tax in cart, checkout and quotes. You can override it per customer."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Show the retail price struck through"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Open for sign-up"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Applicants can choose this role on the registration form."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Approve applications automatically"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Payment methods"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Leave all unticked to allow every enabled method."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Shipping methods"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Leave all unticked to allow every method."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Roles & tiers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Each wholesale role has its own prices, minimums, tax, payment and shipping rules."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "No wholesale roles"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Create a role such as “Wholesale” or “Distributor” to start."
+msgstr ""
+
+#. translators: %d: customers
+#: build/admin.js:3
+#, js-format
+msgid "%d customer"
+msgid_plural "%d customers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:3
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:3
+msgid "None"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Minimum order"
+msgstr ""
+
+#. translators: %d: items
+#: build/admin.js:3
+#, js-format
+msgid "%d items"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Payment"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All methods"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Auto-approve"
+msgstr ""
+
+#. translators: %s: amount
+#: build/admin.js:3
+#, js-format
+msgid "Free shipping from %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Delete this role?"
+msgstr ""
+
+#. translators: %s: role
+#: build/admin.js:3
+#, js-format
+msgid "Customers with “%s” go back to retail prices. Rules for this role stop applying."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Role deleted. Its customers are retail customers now."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Delete role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Percentage off"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Amount off each"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Fixed unit price"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Bigger orders get a better price. The highest matching tier wins."
+msgstr ""
+
+#: build/admin.js:3
+msgid "From quantity"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Discount type"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Percent"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Amount"
+msgstr ""
+
+#. translators: %d: row
+#: build/admin.js:3
+#, js-format
+msgid "Remove tier %d"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add tier"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Everyone (incl. retail)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Edit pricing rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "New pricing rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule saved. Prices update right away."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Save rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule name"
+msgstr ""
+
+#: build/admin.js:3
+msgid "e.g. Distributor mugs"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Who"
+msgstr ""
+
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Products"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All products"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Categories"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Specific products"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Priority"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Higher wins when several rules match."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Base discount"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Use 0 if only the quantity breaks should apply."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Starts (optional)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Ends (optional)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Sub-categories are included."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Add products"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Selected products"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule is active"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Price preview"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Check what a customer pays before you publish a rule."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Customer role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Retail / guest"
+msgstr ""
+
+#: build/admin.js:3
+msgid "each"
+msgstr ""
+
+#. translators: 1: qty, 2: total
+#: build/admin.js:3
+#, js-format
+msgid "%1$d × = %2$s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Product price for this role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pricing rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Role default discount"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Regular price (no rule)"
+msgstr ""
+
+#. translators: %d: qty
+#: build/admin.js:3
+#, js-format
+msgid ", tier from %d"
+msgstr ""
+
+#. translators: %d: qty
+#: build/admin.js:3
+#, js-format
+msgid " · minimum %d"
+msgstr ""
+
+#. translators: %d: qty
+#: build/admin.js:3
+#, js-format
+msgid " · packs of %d"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Hidden from this role"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Applies to"
+msgstr ""
+
+#: build/admin.js:3
+#: build/storefront.js:1
+msgid "Price"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Tiers only"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Active"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Paused"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Tier prices and quantity breaks. Product-level prices on the product’s Wholesale tab win over rules."
+msgstr ""
+
+#: build/admin.js:3
+msgid "New rule"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pause"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Activate"
+msgstr ""
+
+#. translators: %s: rule
+#: build/admin.js:3
+#, js-format
+msgid "Delete %s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rule deleted."
+msgstr ""
+
+#: build/admin.js:3
+msgid "No pricing rules yet"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Without rules, wholesale customers get their role’s default discount."
+msgstr ""
+
+#: build/admin.js:3
+msgid "— Not set —"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Storefront behaviour, quotes, registration and DEV3 AI options."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pages"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Pick existing pages or create them with one click. Each page holds a shortcode (or the matching block)."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Wholesale registration page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Page created and selected. Save the settings to keep it."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Create page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Prices and visibility"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Prices for guests"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Show prices to everyone"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Hide prices until customers log in"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Text instead of the price"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quantity breaks count"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Per cart line"
+msgstr ""
+
+#: build/admin.js:3
+msgid "All variations of a product together"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Offer “Request a quote” when prices are hidden"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Show the retail price struck through next to wholesale prices"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Show the “Buy more, save more” table on product pages"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Retail customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Methods only wholesale buyers may use, such as invoice / net 30 or pickup at the warehouse."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Hide these payment methods from retail customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Hide these shipping methods from retail customers"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Guests only"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Only when the price is hidden"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Off (quote page only)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quotes are valid for"
+msgstr ""
+
+#: build/admin.js:3
+msgid "days"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Send a reminder after"
+msgstr ""
+
+#: build/admin.js:3
+msgid "0 = no reminder."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Quote number prefix"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Show “Request a quote for this cart” on the cart page"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Email the customer when a sent quote expires"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Default terms"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Prices are valid until the date shown. Shipping and taxes as listed…"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Address on the PDF"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Leave empty to use the WooCommerce store address."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Create the account"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Right away (as a retail customer until approved)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Only when the application is approved"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Registration is open"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Email tone"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Formal"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Short and to the point"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Let shoppers build a list from text on the quote and quick-order pages"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Rate-limited and cached; falls back to a simple matcher when AI is off or the budget is reached. Shoppers confirm every line."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Advanced"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Delete all data when the plugin is uninstalled"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Removes quotes, applications, rules and roles. Orders stay in WooCommerce."
+msgstr ""
+
+#: build/admin.js:3
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Connect Google Gemini for quote drafts, email writing and application screening. Wholesale pricing and quotes work without it."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:3
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key. AI drafts are never saved or sent until you accept them."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Quote list, contact form and free-text request. Also shows a quote when opened from the email link."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Shoppers review their quote list and send a request. Preview the page to see it."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Application form for wholesale accounts."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Businesses apply here; you approve them in the B2B desk."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Quick order table"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Searchable product table for fast bulk ordering with each customer’s own prices."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Table"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Category slug (optional)"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Products per page"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Customers search, set quantities and add many products at once. Preview the page to see it."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Search by name or SKU"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "All categories"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Product pages"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Add to cart"
+msgstr ""
+
+#: build/storefront.js:1
+msgid ""
+"One item per line, e.g.\n"
+"MUG-KRAFT-12 x 120\n"
+"A5 notebook, 30"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Find products"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Paste a list instead"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Your list (SKU or product name and quantity)"
+msgstr ""
+
+#. translators: 1: items, 2: products
+#: build/storefront.js:1
+#, js-format
+msgid "%1$d item from %2$d product selected"
+msgid_plural "%1$d items from %2$d products selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/storefront.js:1
+msgid "Set a quantity to select products."
+msgstr ""
+
+#. translators: %d: qty
+#: build/storefront.js:1
+#, js-format
+msgid "Min. %d"
+msgstr ""
+
+#. translators: %d: pack
+#: build/storefront.js:1
+#, js-format
+msgid "Packs of %d"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Stock"
+msgstr ""
+
+#. translators: %d: stock
+#: build/storefront.js:1
+#, js-format
+msgid "%d in stock"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "In stock"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Out of stock"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "On request"
+msgstr ""
+
+#. translators: %s: product
+#: build/storefront.js:1
+#, js-format
+msgid "Quantity of %s"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "No products match your search."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "No products to show."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Previous"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Next"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "View cart"
+msgstr ""
+
+#. translators: %d: lines
+#: build/storefront.js:1
+#, js-format
+msgid "%d product added to your cart."
+msgid_plural "%d products added to your cart."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/storefront.js:1
+msgid "Added to your quote list."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Request your quote"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Matching your list…"
+msgstr ""
+
+#. translators: %d: products
+#: build/storefront.js:1
+#, js-format
+msgid "%d product matched and selected. Check the quantities, then add them to the cart or quote."
+msgid_plural "%d products matched and selected. Check the quantities, then add them to the cart or quote."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/storefront.js:1
+msgid "Not found:"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Log in to see your prices. You can still build a quote list."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Log in"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Category"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Loading products…"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Your quote list is empty. Add products with the “Add to quote” button on any product page, or describe what you need below."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Describe what you need"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Quantities, sizes, delivery date, anything that helps us price it."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "e.g. 120 kraft mugs and 30 A5 notebooks, delivery to Berlin by March"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Find these products"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Request my quote"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Looking for matching products…"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "We could not match products automatically. No problem: send your request and we will do it for you."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Add selected to my list"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Added to your list. Adjust quantities above if needed."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Did you mean:"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Not matched (we will check these by hand):"
+msgstr ""
+
+#. translators: 1: name, 2: email
+#: build/storefront.js:1
+#, js-format
+msgid "Sending as %1$s (%2$s)."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Optional: turn your text into list items."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Add a product to your list or describe what you need."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Request sent"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Your quote list"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Your details"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Accept quote"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Decline quote"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Decline this quote"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Reason (optional)"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Send message"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Questions or changes? Send us a message"
+msgstr ""
+
+#. translators: %s: date
+#: build/storefront.js:1
+#, js-format
+msgid "Requested %s"
+msgstr ""
+
+#. translators: %s: date
+#: build/storefront.js:1
+#, js-format
+msgid "valid until %s"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "We are preparing your quote and will email you when it is ready."
+msgstr ""
+
+#. translators: %s: order number
+#: build/storefront.js:1
+#, js-format
+msgid "Pay for order #%s"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Download PDF"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Messages and updates"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "You"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "We could not find this quote. Please use the link from your email."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "First name"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Last name"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Business email"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "VAT / tax ID"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Needed for tax-exempt purchasing."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Choose…"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Tell us about your business"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "What you sell, where, and roughly how much you expect to order."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "You are logged in; we will upgrade this account when we approve it."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Your account is ready"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Application received"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Open a wholesale account"
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Get trade prices, quantity discounts, quick ordering and quotes. We review every application by hand."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "Choose the product options first."
+msgstr ""
+
+#: build/storefront.js:1
+msgid "View list"
+msgstr ""

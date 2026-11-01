@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI B2B Wholesale &amp; Quote Requests for WooCommerce – Documentation</title>
+<style>
+:root { --ink: #111827; --dim: #4b5563; --line: #e5e7eb; --brand: #4338ca; --tint: #f5f5ff; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #fff; }
+header { background: linear-gradient(135deg, #312e81, #4f46e5); color: #fff; padding: 40px 20px; }
+header h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.2; }
+header p { margin: 0; opacity: .9; }
+.wrap { max-width: 980px; margin: 0 auto; }
+nav { border-bottom: 1px solid var(--line); padding: 12px 20px; position: sticky; top: 0; background: #fff; overflow-x: auto; white-space: nowrap; }
+nav a { color: var(--brand); text-decoration: none; margin-right: 16px; font-size: 14px; }
+main { padding: 8px 20px 60px; }
+h2 { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 22px; }
+h3 { margin-top: 28px; font-size: 18px; }
+code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+pre { background: #0f172a; color: #e2e8f0; padding: 14px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f9fafb; }
+.note { background: var(--tint); border-left: 4px solid var(--brand); padding: 12px 16px; border-radius: 0 8px 8px 0; }
+img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.shots figure { margin: 0; } figcaption { font-size: 14px; color: var(--dim); }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>DEV3 AI B2B Wholesale &amp; Quote Requests for WooCommerce</h1><p>Version 1.0.0 · Documentation · by DEV3 Technologies</p></div></header>
+<nav><div class="wrap"><a href="#install">Install</a><a href="#setup">Quick setup</a><a href="#roles">Roles</a><a href="#registration">Registration</a><a href="#pricing">Pricing</a><a href="#rules">Checkout rules</a><a href="#quick">Quick order</a><a href="#quotes">Quotes</a><a href="#ai">DEV3 AI</a><a href="#key">Gemini key</a><a href="#emails">Emails</a><a href="#shortcodes">Shortcodes</a><a href="#hooks">Hooks</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a></div></nav>
+<main class="wrap">
+
+<p>Sell to businesses and consumers from one WooCommerce store: wholesale roles with their own prices and buying rules, a fast quick-order table, and a complete request-a-quote workflow with PDF quotes that turn into orders. Optional DEV3 AI drafts quotes from a customer's own words and writes the emails. Every AI result is a draft you accept, edit or reject, and the plugin works fully without AI.</p>
+
+<div class="shots">
+<figure><img src="screenshots/1-dashboard.png" alt="Dashboard"><figcaption>Dashboard and setup checklist</figcaption></figure>
+<figure><img src="screenshots/2-ai-quote-draft.png" alt="AI quote draft"><figcaption>Quote drafted by DEV3 AI</figcaption></figure>
+<figure><img src="screenshots/4-quick-order.png" alt="Quick order"><figcaption>Quick-order table</figcaption></figure>
+</div>
+
+<h2 id="install">1. Installation</h2>
+<ol>
+<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3), WooCommerce 8.0+.</li>
+<li>Plugins → Add New → Upload Plugin → choose <code>dev3-ai-b2b-wholesale-for-woocommerce.zip</code> → Activate.</li>
+<li>A new menu <strong>DEV3 B2B &amp; Quotes</strong> appears. Shop managers can use it too (filter <code>dev3bq_manage_capability</code> to change that).</li>
+</ol>
+<p>The plugin declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart &amp; Checkout blocks.</p>
+
+<h2 id="setup">2. Quick setup (5 minutes)</h2>
+<ol>
+<li><strong>Settings → Pages</strong>: click <em>Create page</em> for the quote page, quick-order page and wholesale registration page, then save.</li>
+<li><strong>Roles &amp; tiers</strong>: two roles are created for you, <em>Wholesale</em> (10% off) and <em>Distributor</em> (20% off, $250 minimum). Edit or add your own.</li>
+<li><strong>Pricing rules</strong>: add quantity breaks, for example “Distributor, all products, 20% off; 50+ 25% off; 100+ fixed $6”.</li>
+<li>Optional: <strong>API Config</strong> → add your Google Gemini key to turn on DEV3 AI.</li>
+</ol>
+
+<h2 id="roles">3. Wholesale roles (tiers)</h2>
+<p>Each role becomes a real WordPress role (<code>dev3bq_&lt;key&gt;</code>) with customer capabilities. Per role you set:</p>
+<table>
+<tr><th>Setting</th><th>What it does</th></tr>
+<tr><td>Default discount</td><td>Percent off when no pricing rule or product price matches.</td></tr>
+<tr><td>Minimum order value / items</td><td>Cart and checkout show an error naming the shortfall until it is met (classic and block checkout).</td></tr>
+<tr><td>Free shipping from</td><td>Adds a “Free wholesale shipping” option above this cart value.</td></tr>
+<tr><td>Tax exempt</td><td>No tax in the cart, checkout and quotes. Override per customer in <em>Wholesale customers</em>.</td></tr>
+<tr><td>Payment / shipping methods</td><td>Only the ticked methods are offered (none ticked = all).</td></tr>
+<tr><td>Price label, show retail price</td><td>“Wholesale price” label and struck-through retail price next to the role price.</td></tr>
+<tr><td>Add to quote button</td><td>Follow the store setting, always or never for this role.</td></tr>
+<tr><td>Open for sign-up / auto-approve</td><td>Show the role on the registration form; approve applications automatically.</td></tr>
+</table>
+<p>Deleting a role turns its customers back into retail customers.</p>
+
+<h2 id="registration">4. Registration and approval</h2>
+<p>Add the <em>Wholesale registration</em> block or <code>[dev3bq_wholesale_registration]</code> to a page. Applicants enter company, contact, tax ID, website, country, account type and a message. A honeypot field, same-origin check and rate limit stop bots.</p>
+<ul>
+<li><strong>Settings → Wholesale registration → Create the account</strong>: right away (as a retail customer until approved) or only when approved. WordPress emails the password link.</li>
+<li><strong>Wholesale customers → Pending</strong>: open an application, optionally screen it with DEV3 AI, pick the role (it can differ from the requested one), tax status and a note, then Approve or Decline. The applicant gets an email either way.</li>
+<li><strong>Customers</strong> tab: change a customer's role, tax status and internal note, or remove wholesale access.</li>
+</ul>
+
+<h2 id="pricing">5. Pricing</h2>
+<p>The price for a product, role and quantity is resolved in this order:</p>
+<ol>
+<li><strong>Product-level price</strong> for the role (product edit screen → <em>Wholesale</em> tab, and on each variation), with its own quantity breaks written as <code>50:7.50, 100:6</code>.</li>
+<li><strong>Pricing rules</strong>: the highest priority matching rule wins (ties: the lowest price). A matching quantity break replaces the rule's base discount. Rules can target everyone, all wholesale roles or one role; all products, categories (sub-categories included) or products; with optional start/end dates.</li>
+<li>The role's <strong>default discount</strong>.</li>
+</ol>
+<p>Discounts apply to the active price (the sale price when on sale). Quantity breaks count per cart line, or across all variations of a product (<em>Settings → Quantity breaks count</em>). Use the <strong>Price preview</strong> on the Pricing rules screen to check any product, role and quantity.</p>
+<p>The product Wholesale tab also sets <strong>Who can buy</strong> (everyone, wholesale only, retail only), <strong>minimum quantity</strong> and <strong>pack size</strong> for wholesale buyers. Hidden products disappear from the shop, search, blocks and related products and return a 404.</p>
+<p><strong>Hide prices from guests</strong>: Settings → Prices for guests → <em>Hide</em>. Guests see “Log in to see prices” and can still request a quote.</p>
+
+<h2 id="rules">6. Checkout rules</h2>
+<ul>
+<li>Minimum order value, minimum items, product minimums and pack sizes are enforced with <code>woocommerce_check_cart_items</code>, which the Store API also runs, so the block checkout is blocked too.</li>
+<li>Payment methods per role and “Hide these payment methods from retail customers” (e.g. Invoice / net 30).</li>
+<li>Shipping methods per role (by method type such as <code>flat_rate</code> or <code>local_pickup</code>) and wholesale-only shipping methods.</li>
+<li>Orders store the buyer's role (<code>_dev3bq_role</code>) and show it in a “B2B” box on the order screen.</li>
+</ul>
+
+<h2 id="quick">7. Quick-order table</h2>
+<p>Block <em>Quick order table</em> or <code>[dev3bq_quick_order category="mugs" per_page="20"]</code>. Customers search by name or SKU, filter by category, see their own price and quantity tiers, set quantities (rounded to minimums and pack sizes) and add everything to the cart or to a quote in one click. <em>Paste a list instead</em> turns lines like <code>MUG-KRAFT-12 x 120</code> into selected rows.</p>
+
+<h2 id="quotes">8. Quotes</h2>
+<h3>How customers request a quote</h3>
+<ul>
+<li><strong>Add to quote</strong> on product pages (Settings → “Add to quote” button: everyone, guests, wholesale, only when the price is hidden, or off).</li>
+<li><strong>Request a quote for this cart</strong> on the cart page (classic and block cart).</li>
+<li>The <strong>quote page</strong> (<code>[dev3bq_request_quote]</code>) shows the quote list, contact details and a “Describe what you need” box with an optional “Find these products” helper.</li>
+</ul>
+<h3>Working on a quote</h3>
+<p>Quotes → open a quote. Add products (priced by the rules for the chosen price list), type a price to override, add custom lines, shipping, an extra discount, tax mode, validity date, terms and a message. <em>Re-price from rules</em> refreshes every product line. Save, then <strong>Send quote</strong>: the customer gets an email with the PDF attached and a link to review it.</p>
+<h3>Statuses</h3>
+<table><tr><th>Status</th><th>Meaning</th></tr>
+<tr><td>New request</td><td>Submitted by the customer.</td></tr><tr><td>In progress</td><td>Being edited by the store.</td></tr><tr><td>Sent</td><td>Priced and emailed; the customer can accept or decline.</td></tr><tr><td>Accepted</td><td>An order was created.</td></tr><tr><td>Declined / Expired / Cancelled</td><td>Closed. Duplicate it to make a new version.</td></tr></table>
+<h3>Accept → order</h3>
+<p>When the customer (or you, with <em>Convert to order</em>) accepts, a pending WooCommerce order is created through the CRUD API with exactly the quoted unit prices, shipping and discount, and the customer is sent to the WooCommerce “Pay for order” page. A quote can only be accepted once.</p>
+<h3>Reminders and expiry</h3>
+<p>A daily task sends one reminder N days after sending (Settings → “Send a reminder after”) and marks quotes past their validity date as expired (optional email).</p>
+<h3>PDF</h3>
+<p>The PDF is generated by the plugin (no external library) with your store name and address (Settings → Address on the PDF), lines, totals, message and terms. Currency symbols outside the PDF font are printed as the currency code.</p>
+
+<h2 id="ai">9. DEV3 AI features</h2>
+<table>
+<tr><th>Feature</th><th>Where</th><th>Guard rails</th></tr>
+<tr><td>Draft with DEV3 AI</td><td>Quote editor</td><td>Only catalogue products found for the request are offered to the AI; anything else is dropped and listed as “Not matched”. Prices always come from your rules. Nothing is saved until you click <em>Accept lines</em> or <em>Add to current lines</em>.</td></tr>
+<tr><td>Write with DEV3 AI</td><td>Quote editor, application drawer</td><td>Cover, follow-up, reply, decline and expiry emails, plus welcome/decline notes. The draft goes into the message box; nothing is sent until you press Send.</td></tr>
+<tr><td>Screen with DEV3 AI</td><td>Wholesale application</td><td>A summary, signals and questions. You decide.</td></tr>
+<tr><td>Find these products</td><td>Quote page, quick-order paste box</td><td>Storefront AI respects the storefront AI switch and the monthly budget, is rate-limited and cached, and falls back to a simple matcher. Shoppers confirm every line.</td></tr>
+</table>
+<p>Email tone and the storefront helper are in Settings → DEV3 AI. Usage, tokens and estimated cost are in <strong>Usage Logs</strong>; set a monthly budget in API Config.</p>
+
+<h2 id="key">10. Google Gemini API key</h2>
+<ol>
+<li>Go to <a href="https://aistudio.google.com/apikey">Google AI Studio</a> and create an API key.</li>
+<li>In WordPress open <strong>DEV3 B2B &amp; Quotes → API Config</strong>, paste the key and click <em>Validate</em>. The key is stored encrypted and never sent to the browser.</li>
+<li>Or define it in <code>wp-config.php</code>: <code>define( 'DEV3BQ_GEMINI_API_KEY', 'your-key' );</code></li>
+<li>Default models: <code>gemini-2.5-flash</code> (fast) and <code>gemini-2.5-pro</code>. Optional: monthly budget, PII masking, storefront AI switch.</li>
+</ol>
+<div class="note">Privacy: data is sent to Google only when an AI feature runs: the request text and matching product names/SKUs, quote facts without addresses, or application details. A paragraph is added to your privacy policy guide, and quotes/applications are included in WordPress personal-data export and erase.</div>
+
+<h2 id="emails">11. Emails</h2>
+<p>All emails are WooCommerce emails you can edit in WooCommerce → Settings → Emails, or override in your theme (<code>woocommerce/emails/dev3bq-email.php</code> and <code>plain/dev3bq-email.php</code>):</p>
+<ul><li>New wholesale application (store)</li><li>Wholesale application update: received / approved / declined (applicant)</li><li>Quote activity: new request, accepted, declined, customer message (store)</li><li>Quote request received (customer)</li><li>Quote ready, with PDF (customer)</li><li>Quote reminder / expired (customer)</li><li>Quote message (customer)</li></ul>
+
+<h2 id="shortcodes">12. Shortcodes and blocks</h2>
+<table><tr><th>Shortcode</th><th>Block</th><th>Shows</th></tr>
+<tr><td><code>[dev3bq_request_quote]</code></td><td>Request a quote</td><td>Quote list and request form; a quote when opened from the email link.</td></tr>
+<tr><td><code>[dev3bq_quick_order category="" per_page="20"]</code></td><td>Quick order table</td><td>Bulk ordering table.</td></tr>
+<tr><td><code>[dev3bq_wholesale_registration]</code></td><td>Wholesale registration</td><td>Application form.</td></tr></table>
+<p>Logged-in customers also get <strong>My Account → Quotes</strong>. Storefront colours are CSS custom properties, e.g. <code>.dev3bq-shop, .dev3bq-quote-btn { --dev3bq-accent: #0f766e; }</code>.</p>
+
+<h2 id="hooks">13. Hooks for developers</h2>
+<table><tr><th>Hook</th><th>Type</th><th>Use</th></tr>
+<tr><td><code>dev3bq_price</code></td><td>filter</td><td>Adjust the computed price array (product, role, qty).</td></tr>
+<tr><td><code>dev3bq_user_role</code></td><td>filter</td><td>Map a user to a wholesale role key.</td></tr>
+<tr><td><code>dev3bq_cart_errors</code></td><td>filter</td><td>Add or remove minimum-order messages.</td></tr>
+<tr><td><code>dev3bq_quote_number</code></td><td>filter</td><td>Custom quote numbers.</td></tr>
+<tr><td><code>dev3bq_pdf_data</code></td><td>filter</td><td>Change what the PDF prints.</td></tr>
+<tr><td><code>dev3bq_quote_product_type</code></td><td>filter</td><td>Allow more product types in AI matching.</td></tr>
+<tr><td><code>dev3bq_quote_created</code>, <code>dev3bq_quote_sent</code>, <code>dev3bq_quote_accepted</code></td><td>action</td><td>Quote lifecycle (accepted passes the WC_Order).</td></tr>
+<tr><td><code>dev3bq_application_submitted</code>, <code>dev3bq_application_approved</code></td><td>action</td><td>Application lifecycle.</td></tr>
+<tr><td><code>dev3bq_manage_capability</code></td><td>filter</td><td>Who can use the B2B desk (default <code>manage_woocommerce</code>).</td></tr>
+<tr><td><code>dev3bq_public_rate_limit</code></td><td>filter</td><td>Per-IP requests per minute for storefront endpoints.</td></tr>
+<tr><td><code>dev3bq_prompt_dev3bq_quote_draft</code> (and the other prompt ids)</td><td>filter</td><td>Adjust AI prompt templates.</td></tr></table>
+<p>REST namespace: <code>dev3bq/v1</code> (admin routes need the manage capability and a REST nonce; <code>public/*</code> routes are same-origin and rate-limited).</p>
+
+<h2 id="faq">14. FAQ</h2>
+<h3>Does it work with block themes and classic themes?</h3><p>Yes, tested with Twenty Twenty-Five and Twenty Twenty-One.</p>
+<h3>Can AI change my prices?</h3><p>No. AI picks products and quantities; prices always come from your pricing rules, and you review the draft before anything is saved.</p>
+<h3>Will page caching break the storefront forms?</h3><p>No. Storefront endpoints do not depend on page nonces; logged-in shoppers' requests use their own session.</p>
+<h3>What happens to quotes when I uninstall?</h3><p>Nothing, unless you enable Settings → Advanced → “Delete all data when the plugin is uninstalled”. Orders always stay in WooCommerce.</p>
+
+<h2 id="changelog">15. Changelog</h2>
+<p><strong>1.0.1 (unreleased)</strong> – Fix: category and product names containing “&amp;” (e.g. “Mugs &amp; Drinkware”) showed as HTML entities in the pricing rules table, rule editor, quick order filter and DEV3 AI prompts. Names are now sent as plain text, including names that were stored escaped twice.</p>
+<p><strong>1.0.0</strong> – Initial release.</p>
+</main>
+</body>
+</html>
